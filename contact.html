@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a quote | BS Constructions &amp; Property Maintenance</title>
+  <meta name="description" content="Get a free quote from BS Constructions &amp; Property Maintenance. Call or text Blair on 0480 458 921, or send through the details of your job.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Archivo:wght@400;600&family=Courier+Prime&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header class="bar">
+    <a href="index.html" class="brand"><img src="assets/img/logo.jpg" alt="BS Constructions - Property Maintenance & Garden Services"></a>
+    <nav class="bar-nav"><a href="index.html">Home</a><a href="gallery.html">Before &amp; after</a><a href="contact.html" aria-current="page">Get a quote</a></nav>
+    <a href="tel:+61480458921" class="bar-call">0480 458 921</a>
+  </header>
+
+  <main>
+    <section class="contact-page wrap">
+      <div class="contact-info">
+        <a href="index.html" class="back">&larr; Home</a>
+        <h1>Hi, I'm Blair.</h1>
+        <p class="lede">Tell me a bit about the job and I'll get back to you with a price. Quotes are free.</p>
+
+        <dl class="details">
+          <dt>Call or text</dt>
+          <dd><a href="tel:+61480458921">0480 458 921</a></dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:bsconstructions1@outlook.com">bsconstructions1@outlook.com</a></dd>
+          <dt>Facebook</dt>
+          <dd><a href="https://www.facebook.com/profile.php?id=61588576869256" target="_blank" rel="noopener">BS Constructions &amp; Property Maintenance</a></dd>
+          <dt>Area</dt>
+          <dd>Adelaide &amp; surrounding areas</dd>
+        </dl>
+
+        <p class="note mono">Quickest way is a text with a few photos of the job.</p>
+      </div>
+
+      <!--
+        PLACEHOLDER FORM: not connected to anything yet.
+        To make it send emails, point the action at a form service, e.g.
+          Formspree:     action="https://formspree.io/f/YOUR_ID" method="POST"
+          Netlify Forms: add  data-netlify="true"  to the <form> tag
+        then delete the script at the bottom of this page.
+      -->
+      <form class="jobcard" id="quote-form" action="#" method="POST">
+        <div class="jc-top">
+          <div class="jc-co">
+            <strong>BS Constructions</strong>
+            <span>Property Maintenance &amp; Garden Services</span>
+          </div>
+          <h2>Quote Card</h2>
+          <div class="jc-meta">
+            <span>No. <b class="jc-no" id="jc-no">0001</b></span>
+            <span>Date <b id="jc-date">&nbsp;</b></span>
+          </div>
+        </div>
+
+        <p class="jc-bar">Customer</p>
+        <div class="jc-grid">
+          <label class="jc-box"><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
+          <label class="jc-box"><span>Phone</span><input type="tel" name="phone" autocomplete="tel" required></label>
+          <label class="jc-box"><span>Email (optional)</span><input type="email" name="email" autocomplete="email"></label>
+          <label class="jc-box"><span>Suburb</span><input type="text" name="suburb" required></label>
+        </div>
+
+        <p class="jc-bar">Work required <em>tick all that apply</em></p>
+        <div class="jc-ticks">
+          <label><input type="checkbox" name="work" value="Yard clean-ups"><i></i>Yard clean-ups</label>
+          <label><input type="checkbox" name="work" value="Lawn mowing &amp; edging"><i></i>Lawn mowing &amp; edging</label>
+          <label><input type="checkbox" name="work" value="Tree trimming &amp; removal"><i></i>Tree trimming &amp; removal</label>
+          <label><input type="checkbox" name="work" value="Rubbish &amp; green waste removal"><i></i>Rubbish &amp; green waste removal</label>
+          <label><input type="checkbox" name="work" value="Fence repairs"><i></i>Fence repairs</label>
+          <label><input type="checkbox" name="work" value="Gutter cleaning"><i></i>Gutter cleaning</label>
+          <label><input type="checkbox" name="work" value="Solar panel cleaning"><i></i>Solar panel cleaning</label>
+          <label><input type="checkbox" name="work" value="Silicone work"><i></i>Silicone work</label>
+          <label><input type="checkbox" name="work" value="General property maintenance"><i></i>General property maintenance</label>
+          <label><input type="checkbox" name="work" value="Other"><i></i>Other</label>
+        </div>
+
+        <p class="jc-bar">Job description</p>
+        <textarea class="jc-lines" name="message" rows="5" aria-label="Job description" placeholder="How big is it, how overgrown, any access issues..."></textarea>
+
+        <p class="jc-bar">When</p>
+        <div class="jc-ticks jc-when">
+          <label><input type="radio" name="when" value="ASAP"><i></i>ASAP</label>
+          <label><input type="radio" name="when" value="This week"><i></i>This week</label>
+          <label><input type="radio" name="when" value="This month"><i></i>This month</label>
+          <label><input type="radio" name="when" value="No rush" checked><i></i>No rush</label>
+        </div>
+
+        <div class="jc-foot">
+          <div class="jc-office" aria-hidden="true">
+            <span>Office use only</span>
+            <span>Quoted $ ________</span>
+            <span>Booked ________</span>
+          </div>
+          <button type="submit" class="jc-send">Send quote card</button>
+        </div>
+        <p class="form-msg mono" id="form-msg" hidden>This form isn't connected yet. For now, call or text Blair on 0480 458 921.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <span class="area">Adelaide, SA</span>
+    <span class="copy">&copy; <span id="yr">2026</span> BS Constructions &amp; Property Maintenance</span>
+    <span class="credit">Built by <a href="https://launchpilotdigital.com.au" target="_blank" rel="noopener">LaunchPilot Digital</a></span>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    // Job card number and date are just for looks
+    document.getElementById('jc-no').textContent = String(Math.floor(1000 + Math.random() * 9000));
+    document.getElementById('jc-date').textContent = new Date().toLocaleDateString('en-AU');
+    // Placeholder only: remove once the form is connected to a real service.
+    document.getElementById('quote-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('form-msg').hidden = false;
+    });
+  </script>
+</body>
+</html>
